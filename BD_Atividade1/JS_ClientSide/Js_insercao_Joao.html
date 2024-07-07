@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de PATCH</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<script>
+    x = $.ajax({
+        type: 'POST',
+        url: 'https://cleberbdsavancado-default-rtdb.firebaseio.com/users/Cliente2.json',
+        data: '{"nome":"João", "idade":"25"}',
+        contentType: "application/json",
+        dataType: 'json'
+    });
+    console.log(x);
+</script>
+
+</body>
+</html>

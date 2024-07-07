@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<script>
+
+    $.ajax({
+        type: 'PATCH',
+        url: 'https://cleberbdsavancado-default-rtdb.firebaseio.com/users/Cliente1.json',
+        data: '{"nome":"Maria da Silva", "idade":"26"}',
+        contentType: "application/json",
+        dataType: 'json'
+    });
+</script>
+
+</body>
+</html>
